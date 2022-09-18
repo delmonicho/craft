@@ -1,23 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
-import Card from './components/Card.js';
-import Header from './components/Header.js';
-import { HashRouter as Router, Route } from 'react-router-dom';
+import { createBrowserRouter, RouteProvider, Route, RouterProvider } from 'react-router-dom';
+import Topics from './pages/Topics';
+import ErrorPage from './pages/ErrorPage';
+import Home from './pages/Home';
+import Header from './components/Header';
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+    errorElement: <ErrorPage/>,
+  },
+  {
+    path: "/topics",
+    element: <Topics/>
+  }
+])
+export default function App() {
 
-function App() {
   return (
-    <Router>
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-        </header>
-        <Card/>
-      </div>
-
-    </Router>
-    
+    <div class="app-container">
+      <RouterProvider router={router}/>
+    </div>
   );
 }
 
-export default App;
+

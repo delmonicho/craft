@@ -1,6 +1,6 @@
 import './Card.css';
 
-function Card() {
+export default function Card() {
     return (
         <div class="card-container">
             <h2>AWS Prep</h2>
@@ -22,5 +22,3 @@ function Card() {
         </div>
     );
 }
-
-export default Card;

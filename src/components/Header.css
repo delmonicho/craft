@@ -1,0 +1,15 @@
+.header-bar {
+    background-color: #4d71b8;
+    text-align: left;
+    padding: 20px;
+    width: 100%;
+}
+
+a {
+    color: #fff;
+    padding: 20px;
+}
+
+a:active {
+    color: rgb(189, 189, 189);
+}

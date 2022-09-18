@@ -1,0 +1,16 @@
+
+.topics-page {
+    width: 100%;
+    height: 100%;
+    background-color: #428b9f;
+}
+
+h2 {
+    color: #fff;
+    padding: 20px;
+}
+
+.array-container {
+    padding-left: 20px;
+    color: #fff;
+}
