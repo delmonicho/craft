@@ -5,7 +5,6 @@
 // create an interface to ensure the input is of the correct type
 
 export function quickSort(arr, low, high) {
-    console.log("*** arr", arr);
 
     if (low < high) {
         // assign a partitioning index at the last element
@@ -22,10 +21,6 @@ export function quickSort(arr, low, high) {
 export function partition(arr, low, high) {
     // set pivot at last element in array
     let pivot = arr[high];
-
-    console.log('***pivot', pivot);
-    console.log('***low', low);
-    console.log('***high', high);
 
     // track index of smaller element and indicate right
     // position of index found so far

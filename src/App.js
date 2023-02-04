@@ -1,9 +1,9 @@
 import './App.css';
-import { createBrowserRouter, RouteProvider, Route, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Topics from './pages/Topics';
 import ErrorPage from './pages/ErrorPage';
 import Home from './pages/Home';
-import Header from './components/Header';
+import MissionLog from './pages/MissionLog';
 
 const router = createBrowserRouter([
   {
@@ -14,6 +14,10 @@ const router = createBrowserRouter([
   {
     path: "/topics",
     element: <Topics/>
+  },
+  {
+    path: "/missions",
+    element: <MissionLog/>
   }
 ])
 export default function App() {

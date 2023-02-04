@@ -5,9 +5,9 @@ function Header() {
     return (
         <div class="header-bar">
 
-                <NavLink to="/">Home</NavLink>
-                <NavLink to="/topics">Topics</NavLink>
-
+                <NavLink to="/">home</NavLink>
+                <NavLink to="/topics">topics</NavLink>
+                <NavLink to="/missions">mission log</NavLink>
         </div>
     );
 }
